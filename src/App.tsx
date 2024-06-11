@@ -1,27 +1,22 @@
-import { useState } from 'react'
-import './styles/App.css'
+import './styles/App.css';
+import { Routes, Route } from 'react-router-dom';
+import DashboardLayout from './components/dashboardlayout';
+import PartySplit from './components/partysplit';
+import PayWithMetamask from './components/paywithmetamask';
+import PayWithSigner from './components/paywithsigner';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-british-racing-green">
-      <>
-        <h1 className="text-white">Vite + React</h1>
-        <div className="mt-4 flex flex-col items-center">
-          <button className="bg-blue-500 text-white p-2 rounded" onClick={() => setCount((count) => count + 1)}>
-            count is {count}
-          </button>
-          <p className="text-white mt-2">
-            Edit <code>src/App.tsx</code> and save to test HMR
-          </p>
-        </div>
-        <p className="read-the-docs text-white mt-4">
-          Click on the Vite and React logos to learn more
-        </p>
-      </>
-    </div>  
-  )
+      <div className="min-h-screen flex flex-col md:flex-row bg-gradient-to-british-racing-green">
+        <>
+          <DashboardLayout>
+            <Routes>
+              <Route path="/partysplit" element={<PartySplit />} />
+              <Route path="/paywithmetamask" element={<PayWithMetamask />} />
+              <Route path="/paywithsigner" element={<PayWithSigner />} />
+            </Routes>
+          </DashboardLayout>
+        </>
+      </div>
+  );
 }
-
-export default App
