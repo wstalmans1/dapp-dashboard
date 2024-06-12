@@ -8,7 +8,7 @@ import PayWithSigner from './components/paywithsigner';
 export default function App() {
   return (
       <div className="min-h-screen flex flex-col md:flex-row bg-gradient-to-british-racing-green">
-        <>
+        
           <DashboardLayout>
             <Routes>
               <Route path="/partysplit" element={<PartySplit />} />
@@ -16,7 +16,7 @@ export default function App() {
               <Route path="/paywithsigner" element={<PayWithSigner />} />
             </Routes>
           </DashboardLayout>
-        </>
+        
       </div>
   );
 }

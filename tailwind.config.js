@@ -9,6 +9,7 @@ export default {
       colors: {
         'british-racing-green': '#004225', // Adding British racing green color
         'lighterbritish-racing-green': '#006400', // Adding British racing green color
+        'mustard-yellow': '#FFDB58', // Adding mustard yellow color
       },
       backgroundImage: {
         'gradient-to-r': 'linear-gradient(to right, var(--tw-gradient-stops))',
