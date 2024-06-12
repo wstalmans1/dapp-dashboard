@@ -3,9 +3,9 @@ import { UserGroupIcon, HomeIcon, DocumentDuplicateIcon } from '@heroicons/react
 import clsx from 'clsx';
 
 const links = [
-  { name: 'Partysplit', href: '/partysplit/', icon: HomeIcon },
-  { name: 'Pay with Metamask', href: '/paywithmetamask/', icon: DocumentDuplicateIcon },
-  { name: 'Pay with Signer', href: '/paywithsigner/', icon: UserGroupIcon },
+  { name: 'Partysplit', href: '/partysplit', icon: HomeIcon },
+  { name: 'Pay with Metamask', href: '/paywithmetamask', icon: DocumentDuplicateIcon },
+  { name: 'Pay with Signer', href: '/paywithsigner', icon: UserGroupIcon },
 ];
 
 const NavLinks = () => {
