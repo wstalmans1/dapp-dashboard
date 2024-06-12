@@ -8,6 +8,7 @@ export default {
     extend: {
       colors: {
         'british-racing-green': '#004225', // Adding British racing green color
+        'lighterbritish-racing-green': '#006400', // Adding British racing green color
       },
       backgroundImage: {
         'gradient-to-r': 'linear-gradient(to right, var(--tw-gradient-stops))',
