@@ -1,4 +1,4 @@
-// src/routes.ts
+/* this file should be named routes.ts
 import React from 'react';
 import PartySplit from './partysplit';
 import PayWithMetamask from './paywithmetamask';
@@ -15,3 +15,4 @@ export const routes: RouteConfig[] = [
   { path: '/paywithmetamask', element: PayWithMetamask, label: 'Pay with Metamask' },
   { path: '/paywithsigner', element: PayWithSigner, label: 'Pay with Signer' },
 ];
+*/
