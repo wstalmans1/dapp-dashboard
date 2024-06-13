@@ -17,5 +17,10 @@ export default {
       },
     },
   },
+  purge: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./path/to/your/other/files.html", // Add your other files here
+  ],
   plugins: [],
 }
