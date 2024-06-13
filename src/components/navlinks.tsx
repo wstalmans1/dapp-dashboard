@@ -15,7 +15,7 @@ const NavLinks = () => {
       {links.map((link) => {
         const LinkIcon = link.icon; // Destructure the icon from the link object
         return (
-          <Link key={link.name} to={link.href} className={clsx('flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-green-900 p-3 text-sm font-medium text-green-50 hover:bg-green-800 hover:text-green-100 md:flex-none md:justify-start md:p-2 md:px-3', { 'bg-sky-100 text-blue-600': location.pathname === link.href })}>
+          <Link key={link.name} to={link.href} className={clsx("flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-green-900 p-3 text-sm font-medium text-green-50 hover:bg-green-800 hover:text-green-100 md:flex-none md:justify-start md:p-2 md:px-3", { 'bg-green-600 text-green-50': location.pathname === link.href })}>
             <LinkIcon className="w-6" />
             <p className="hidden md:block">{link.name}</p>
           </Link>
