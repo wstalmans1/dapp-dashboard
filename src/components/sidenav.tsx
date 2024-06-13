@@ -15,7 +15,7 @@ const SideNav: React.FC = () => {
   const location = useLocation();
   return (
     <div className="flex h-full flex-col px-3 py-4 md:px-2">
-      <Link className="mb-2 flex h-20 items-end justify-start rounded-md bg-amber-800 p-4 md:h-40" to="/">
+      <Link className="mb-2 flex h-20 items-end justify-start rounded-md bg-gradient-to-r from-green-900 to-rich-gold p-4 md:h-40" to="/">
         <div className="w-32 text-white md:w-40">Team Blockchain Advisors</div>
       </Link>
       <div className="flex grow flex-row justify-between space-x-2 md:flex-col md:space-x-0 md:space-y-2">
@@ -26,8 +26,8 @@ const SideNav: React.FC = () => {
               key={link.name}
               to={link.href}
               className={clsx(
-                'flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-amber-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3',
-                { 'bg-sky-100 text-blue-600': location.pathname === link.href }
+                'flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-green-900 text-gray-50 p-3 text-sm font-medium hover:bg-green-800 hover:text-gray-50 md:flex-none md:justify-start md:p-2 md:px-3',
+                { 'bg-green-800 text-gray-50': location.pathname === link.href }
               )}
             >
               <LinkIcon className="w-6" />
