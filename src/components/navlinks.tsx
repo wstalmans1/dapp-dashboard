@@ -9,13 +9,13 @@ const links = [
 ];
 
 const NavLinks = () => {
-  const location = useLocation();
+  const location = useLocation(); // Accesses the current location
   return (
     <>
       {links.map((link) => {
-        const LinkIcon = link.icon;
+        const LinkIcon = link.icon; // Destructure the icon from the link object
         return (
-          <Link key={link.name} to={link.href} className={clsx('flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-amber-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3', { 'bg-sky-100 text-blue-600': location.pathname === link.href })}>
+          <Link key={link.name} to={link.href} className={clsx('flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-green-900 p-3 text-sm font-medium text-green-50 hover:bg-green-800 hover:text-green-100 md:flex-none md:justify-start md:p-2 md:px-3', { 'bg-sky-100 text-blue-600': location.pathname === link.href })}>
             <LinkIcon className="w-6" />
             <p className="hidden md:block">{link.name}</p>
           </Link>
