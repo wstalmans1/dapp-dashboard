@@ -5,6 +5,7 @@ import { createHashRouter, RouterProvider } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import ProfilesPage from "./components/ProfilesPage";
 import NotFoundPage from "./components/NotFoundPage";
+import ProfilePage from "./components/ProfilePage";
 
 
 import './styles/main.css';
@@ -12,6 +13,7 @@ import './styles/main.css';
 const router = createHashRouter([ 
     { path: "/", element: <HomePage />, errorElement: <NotFoundPage />},
     { path: "/profiles", element: <ProfilesPage />},
+    { path: "/profiles/:profileId", element: <ProfilePage />},
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
