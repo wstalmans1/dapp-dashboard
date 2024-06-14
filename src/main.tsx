@@ -12,8 +12,7 @@ import './styles/main.css';
 
 const router = createHashRouter([ 
     { path: "/", element: <HomePage />, errorElement: <NotFoundPage />},
-    { path: "/profiles", element: <ProfilesPage />},
-    { path: "/profiles/:profileId", element: <ProfilePage />},
+    { path: "/profiles", element: <ProfilesPage />, children: [{ path: "/profiles/:profileId", element: <ProfilePage />}]},
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
